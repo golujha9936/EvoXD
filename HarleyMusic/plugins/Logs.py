@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+'''from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from config import LOG_ID
 from HarleyMusic import app
@@ -46,3 +46,4 @@ async def on_left_chat_member(client: Client, message: Message):
 
         
         await new_message(LOG_ID, goodbye, reply_markup)
+'''
