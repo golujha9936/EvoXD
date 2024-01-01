@@ -77,8 +77,8 @@ async def gib_repo(client, CallbackQuery, _):
     return await CallbackQuery.edit_message_text( 
         reply_markup=InlineKeyboardMarkup( 
         [  
-            InlineKeyboardButton(text=_["Uᴘᴅᴀᴛᴇꜱ"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["Sᴜᴘᴘᴏʀᴛ"], url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
         ], 
             [InlineKeyboardButton(text="◁", callback_data=f"settingsback_helper")] 
         ), 
