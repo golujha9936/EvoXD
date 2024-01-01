@@ -37,7 +37,7 @@ from HarleyMusic.utils.inline.settings import (
 )
 from HarleyMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, SUPPORT_CHANNEL, SUPPORT_CHAT
-
+import config
 
 @app.on_message(
     filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
