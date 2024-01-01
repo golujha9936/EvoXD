@@ -79,7 +79,6 @@ async def gib_repo(client, CallbackQuery, _):
             InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ 🌾", url=config.SUPPORT_CHAT),
         ], 
             [InlineKeyboardButton(text="◁", callback_data=f"settingsback_helper")] 
-        ] 
         ), 
     )
 
