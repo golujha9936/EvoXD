@@ -4,6 +4,8 @@ from pyrogram.errors import MessageNotModified
 from pyrogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
+    InputMediaPhoto,
+    InputMediaVideo,
     InlineKeyboardMarkup,
     Message,
 )
