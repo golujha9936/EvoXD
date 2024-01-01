@@ -70,18 +70,13 @@ async def settings_cb(client, CallbackQuery, _):
 @languageCB 
 async def gib_repo(client, CallbackQuery, _): 
     await CallbackQuery.edit_message_media( 
-        InputMediaPhoto("https://telegra.ph/file/7fc57533c40ff57d070c3.jpg", caption="<b>ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs ✨</b>"), 
+          InputMediaPhoto("https://telegra.ph/file/7fc57533c40ff57d070c3.jpg", caption="<b>ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs ✨</b>"), 
     ), 
     return await CallbackQuery.edit_message_text( 
         reply_markup=InlineKeyboardMarkup( 
         [  
-            [ 
-            InlineKeyboardButton( 
-                text="Uᴘᴅᴀᴛᴇꜱ 🎊", url=config.SUPPORT_CHANNEL 
-            ), 
-            InlineKeyboardButton( 
-                text="Sᴜᴘᴘᴏʀᴛ 🍒", url=config.SUPPORT_CHAT 
-            ) 
+            InlineKeyboardButton(text=_["Uᴘᴅᴀᴛᴇꜱ"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["Sᴜᴘᴘᴏʀᴛ"], url=config.SUPPORT_CHAT),
         ], 
             [InlineKeyboardButton(text="◁", callback_data=f"settingsback_helper")] 
         ] 
