@@ -34,7 +34,7 @@ from HarleyMusic.utils.inline.settings import (
     vote_mode_markup,
 )
 from HarleyMusic.utils.inline.start import private_panel
-from config import BANNED_USERS, OWNER_ID
+from config import BANNED_USERS, OWNER_ID, SUPPORT_CHANNEL, SUPPORT_CHAT
 
 
 @app.on_message(
@@ -64,6 +64,28 @@ async def settings_cb(client, CallbackQuery, _):
             CallbackQuery.message.chat.title,
         ),
         reply_markup=InlineKeyboardMarkup(buttons),
+    )
+
+@app.on_callback_query(filters.regex("lippsxd") & ~BANNED_USERS) 
+@languageCB 
+async def gib_repo(client, CallbackQuery, _): 
+    await CallbackQuery.edit_message_media( 
+          InputMediaPhoto("https://telegra.ph/file/7fc57533c40ff57d070c3.jpg", caption="<b>ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs ✨</b>"), 
+    ), 
+    return await CallbackQuery.edit_message_text( 
+        reply_markup=InlineKeyboardMarkup( 
+        [  
+            [ 
+            InlineKeyboardButton( 
+                text="Uᴘᴅᴀᴛᴇꜱ 🎊", url=config.SUPPORT_CHANNEL 
+            ), 
+            InlineKeyboardButton( 
+                text="Sᴜᴘᴘᴏʀᴛ 🍒", url=config.SUPPORT_CHAT 
+            ) 
+        ], 
+            [InlineKeyboardButton(text="◁", callback_data=f"settingsback_helper")] 
+        ] 
+        ), 
     )
 
 
