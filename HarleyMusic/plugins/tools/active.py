@@ -5,6 +5,7 @@ from unidecode import unidecode
 from HarleyMusic import app
 from HarleyMusic.misc import SUDOERS
 from HarleyMusic.utils.inline import close_markup
+from HarleyMusic.utils.decorators.language import language
 from HarleyMusic.utils.database import (
     get_active_chats,
     get_active_video_chats,
