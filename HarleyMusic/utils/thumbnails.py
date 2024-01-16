@@ -9,7 +9,7 @@ from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 
 from HarleyMusic import app
-from config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
+from config import YOUTUBE_IMG_URL
 
 
 def changeImageSize(maxWidth, maxHeight, image):
