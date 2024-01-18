@@ -127,6 +127,8 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
+        if "?si=" in link:
+            link = link.split("?si=")[0]
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
             "-g",
