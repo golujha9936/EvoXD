@@ -22,7 +22,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-#LOG_ID = int(getenv("LOG_ID", "-1001957871522"))
+#LOG_ID = int(getenv("LOG_ID", "-1002133369721"))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @RoseBot on Telegram by /id
@@ -36,15 +36,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/aashuxxD/Nomore",
+    "https://github.com/golujha9936/EvoXD",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Saykkunomusic")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Saykkunomusic")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/About_Itz_bunny")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ll_bunnyfillngs_ll")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -82,10 +82,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/40305bd1cf787e5b3be21.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/49536e6ddb3928f21f013.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/7ecc2c5eb4db5a21039e6.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
